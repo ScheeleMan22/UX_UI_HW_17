@@ -1,62 +1,83 @@
 body{
+    margin: 0;
+    overflow: scroll;
+    /*background-color: #0C2037;*/
+}
+
+/*-------------------Top Navigation----------------------*/
+header {
     background-color: #0C2037;
+    padding:15px;
+    height:15%;
 }
-/*.inline-block{
-    display: inline-grid;
-    vertical-align: bottom;
-    background-color: red;
+header ul {
+    float: right;
+    color: #fefefe
 }
-*/
-
-/* Navigation Bar */
-.logo {
-    width: 100%;
-    padding: 1%;
-    font-size: 28px;
+header li {
+    display: inline-block;
+    padding: 0px 5px;
 }
-
-.navigation {
-    width: 100%;
-    padding: 1%;
-    padding-bottom: 2%;
-    position: relative;
-    color: whitesmoke;
-    margin-bottom: 5%;
-    line-height: 10px;
+header h1 {
+    display:flex;
+    color:#fefefe;
 }
 
-.nav {
-    text-align:right;
-    padding: 1%;
-    margin-top: -8%;
-    margin-right: 20px;
+header p {
+    display:inline-flex;
+    color: #fefefe;
+    margin-top: -10px;
+}
+/*------------------------Body Content-------------------------------------------------------------------*/
+
+button {
+    padding-bottom: 10%;
+    padding-top: 10%;
+    display: inline-block;
+    color:#fefefe;
+    font-size:36px;
+    width: 33%;
+    height: 33%;
+    border: none;
+    margin-right: -2px;
+    margin-left: -2px;
+    text-align:center;
+    line-height: 2px;
 }
 
-/*.ul {
-    width: 50%;
-    text-align: right;
-    margin-left: auto;
-}
-*/
-/*-------------------------------------------------------------------------------------------*/
-
-/*Body Content*/
 
 /*
-#heroImg {
-    height: 400px;
-    padding: 100px;
+.wrapper {
+    max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+.buttonGrid {
+    display: inline-block;
+    position: left;
 }
 */
-/*Hi*/
+/*--------------------------------------------------------------------------------------------*/
+/*Footer Content*/
 /*
-.content {
-    width: 500px;
-    margin: 0 auto;
-    padding: 50px;
-    color: whitesmoke;
+footer{
+    background-color: #0C2037;
+    padding: 5px;
+    color: #fefefe;
+ 
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 5px;
+}
+footer li {
+    display: inline-block;
+    padding: 0px 7px;
 }
 */
+
+/*
 .blueBlock{
     width:33%;
     height: 300px;
@@ -101,19 +122,40 @@ body{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-/*--------------------------------------------------------------------------------------------*/
-/*Footer Content*/
 
-footer{
-    background-color: whitesmoke;
-    padding-top: 1px;
-    height: 50px;
- 
+*/
+
+/*UX SKILLS CONTENT*/
+
+.flexContainer {
+    display: flex;
+    margin: auto;
+    padding: auto;
+    flex-direction: row;
 }
-.footerInformation {
-   column-count: 4;
-   width:25%;
-   text-align: right;
-   margin-top: 10px;
-   margin-right: 20px;
+.flexChild {
+    width: 33%;
 }
+.flexChild2 {
+    width: 33%;
+}
+.flexChild3 {
+    width: 33%;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+}
+
+
+/*
+@media only screen and (max-width: 600px) {
+    .flexContainer {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto;
+      margin: 0px 5%;
+    }
+  }
